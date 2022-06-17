@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+	<meta charset="utf-8" />
+	<title>Vm player</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+	<h1>Oliver Tree </h1>
+	<figure id="videoContainer" data-fullscreen="false">
+		<video id="video" controls preload="metadata" poster="./img/0.jpg">
+			<source src="./video/Oliver Tree - Jerk [Lyric Video].mp4" type="video/mp4">
+			<!-- <source src="./video/Oliver Tree - Jerk [Lyric Video].mp4" type="video/webm">
+			<source src="./video/Oliver Tree - Jerk [Lyric Video].mp4" type="video/ogg"> -->
+
+			<object type="application/x-shockwave-flash" data="flash-player.swf?videoUrl=./video/Oliver Tree - Jerk [Lyric Video].mp4" width="1024" height="576">
+				<param name="movie" value="flash-player.swf?videoUrl=./video/Oliver Tree - Jerk [Lyric Video].mp4" />
+				<param name="allowfullscreen" value="true" />
+				<param name="wmode" value="transparent" />
+				<param name="flashvars" value="controlbar=over&amp;image=img/poster.jpg&amp;file=flash-player.swf?./video/Oliver Tree - Jerk [Lyric Video].mp4" />
+				<img alt="Tears of Steel poster image" src="./img/0.jpg" width="1024" height="428" title="No video playback possible, please download the video from the link below" />
+			</object>
+
+			<a href="./video/Oliver Tree - Jerk [Lyric Video].mp4">Download MP4</a>
+		</video>
+		<div id="video-controls" class="controls" data-state="hidden">
+			<button id="playpause" type="button" data-state="play">Play/Pause</button>
+			<button id="stop" type="button" data-state="stop">Stop</button>
+			<div class="progress">
+				<progress id="progress" value="0" min="0">
+					<span id="progress-bar"></span>
+				</progress>
+			</div>
+			<button id="mute" type="button" data-state="mute">Mute/Unmute</button>
+			<button id="volinc" type="button" data-state="volup">Vol+</button>
+			<button id="voldec" type="button" data-state="voldown">Vol-</button>
+			<button id="fs" type="button" data-state="go-fullscreen">Fullscreen</button>
+		</div>
+	</figure>
+	<!-- <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+            <li><a href="https://www.facebook.com/uicgroup.org/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitch"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/uic.group/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+    </footer> -->
+	<!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+	<script src="js/video-player.js"></script>
+</body>
+</html>
